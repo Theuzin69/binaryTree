@@ -49,9 +49,7 @@ bool ABB::busca(int x) {
 }
 void ABB::insere(int x) {
 	No* novoNo = new No(x);
-	if (vazia()) {
-		raiz = novoNo;
-	}
+	if (vazia()) { raiz = novoNo; }
 	else {
 		No* aux = raiz;
 		bool inseriu = false;
