@@ -56,7 +56,7 @@ void ABB::insere(int x) {
 		No* aux = raiz;
 		bool inseriu = false;
 		
-		while (inseriu==false) {
+		while (!inseriu) {
 			if (aux->getChave() > novoNo->getChave())
 				if (!aux->getEsq()) {
 					aux->setEsq(novoNo);
