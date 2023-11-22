@@ -41,7 +41,7 @@ bool ABB::busca(int x) {
 	while (aux && !achou) {
 		if (x == aux->getChave())
 			achou = true;
-		else if (x <= aux->getChave())
+		else if (x < aux->getChave())
 			aux = aux->getEsq();
 		else aux = aux->getDir();
 	}
